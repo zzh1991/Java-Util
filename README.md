@@ -1,6 +1,7 @@
 # Java Utils
 
-## ListUtil
+## Utils
+### ListUtil
 - isListNullOrEmpty
 - splitListToSmallLists
 - splitStringToList
@@ -11,11 +12,20 @@
 - intersection
 - difference
 
-## StringUtil
+### StringUtil
 - capitalizeEveryWord
 
-## DebugUtil
+### DebugUtil
 - isDebugMode
 
-## TreadUtil
+### TreadUtil
 - getExecutorService
+
+## Build artifacts
+> Intellij IDEA
+```
+1. Project Structure
+2. Project Settings -> Artifacts
+3. + -> Jar -> From modules with dependencies
+4. Build -> Build Artifacts
+```

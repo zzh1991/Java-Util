@@ -1,7 +1,9 @@
 .idea
 out
-test
+target
 
-src/util/EnumUtil.java
-src/util/MathUtil.java
-src/StatusEnum.java
+src/main/java/util/EnumUtil.java
+src/main/java/util/MathUtil.java
+src/main/java/StatusEnum.java
+
+src/test

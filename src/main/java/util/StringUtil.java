@@ -1,7 +1,7 @@
 package util;
 
 import com.google.common.base.Strings;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
