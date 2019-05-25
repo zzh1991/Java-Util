@@ -24,4 +24,8 @@ public class TimeUtil {
     public long getMillisecondsByLocalDateTime(LocalDateTime dateTime) {
         return dateTime.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
     }
+    
+    public boolean isTimeAfter(ZonedDateTime dateTime, ZonedDateTime baseDateTime) {
+        return dateTime.compareTo(baseDateTime) > 0;
+    }
 }

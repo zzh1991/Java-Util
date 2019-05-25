@@ -29,3 +29,13 @@
 3. + -> Jar -> From modules with dependencies
 4. Build -> Build Artifacts
 ```
+
+### Maven package
+
+```bash
+./mvnw clean package
+```
+
+## Todo
+
+- [] Java API Doc

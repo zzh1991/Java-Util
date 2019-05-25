@@ -9,3 +9,6 @@ src/main/java/vo/*.java
 
 src/test
 java-util.iml
+
+.DS_Store
+dependency-reduced-pom.xml
