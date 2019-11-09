@@ -1,4 +1,4 @@
-package vo;
+package com.zzh.util.vo;
 
 import lombok.Data;
 

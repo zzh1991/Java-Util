@@ -1,4 +1,4 @@
-package util;
+package com.zzh.util.util;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;

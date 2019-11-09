@@ -1,6 +1,6 @@
-package util;
+package com.zzh.util.util;
 
-import vo.RsaKeyPairGenerator;
+import com.zzh.util.vo.RsaKeyPairGenerator;
 
 import javax.crypto.Cipher;
 import java.security.KeyFactory;
@@ -14,7 +14,7 @@ import java.util.Base64;
 import java.util.Objects;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
-import static vo.RsaKeyPairGenerator.RSA;
+import static com.zzh.util.vo.RsaKeyPairGenerator.RSA;
 
 /**
  * @author zhihao zhang

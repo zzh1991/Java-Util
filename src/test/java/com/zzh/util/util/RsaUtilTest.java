@@ -1,8 +1,8 @@
-package util;
+package com.zzh.util.util;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import vo.RsaKeyPairGenerator;
+import com.zzh.util.vo.RsaKeyPairGenerator;
 
 import java.util.Base64;
 

@@ -1,4 +1,4 @@
-package util;
+package com.zzh.util.util;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;

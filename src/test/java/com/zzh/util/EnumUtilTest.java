@@ -1,6 +1,8 @@
-import constant.StatusEnum;
+package com.zzh.util;
+
+import com.zzh.util.constant.StatusEnum;
 import org.junit.jupiter.api.Test;
-import util.EnumUtil;
+import com.zzh.util.util.EnumUtil;
 
 import java.util.Map;
 

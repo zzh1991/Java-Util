@@ -1,9 +1,9 @@
-package util;
+package com.zzh.util.util;
 
 import com.google.common.collect.Lists;
 import com.jsoniter.spi.TypeLiteral;
 import org.junit.jupiter.api.Test;
-import vo.Person;
+import com.zzh.util.vo.Person;
 
 import java.util.List;
 

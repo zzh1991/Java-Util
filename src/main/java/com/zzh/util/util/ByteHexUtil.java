@@ -1,4 +1,4 @@
-package util;
+package com.zzh.util.util;
 
 import com.google.common.io.BaseEncoding;
 

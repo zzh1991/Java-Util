@@ -1,4 +1,4 @@
-package vo;
+package com.zzh.util.vo;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;

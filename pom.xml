@@ -4,9 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>groupId</groupId>
+    <groupId>com.zzh.util</groupId>
     <artifactId>java-util</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub zzh1991 Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/zzh1991/java-util</url>
+        </repository>
+    </distributionManagement>
 
     <properties>
         <java.version>1.8</java.version>

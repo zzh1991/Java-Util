@@ -2,7 +2,7 @@
 out
 target
 
-java-util.iml
+java-com.zzh.util.util.iml
 
 .DS_Store
 dependency-reduced-pom.xml
