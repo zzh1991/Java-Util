@@ -39,6 +39,25 @@
 
 - getExecutorService
 
+### ByteHexUtil
+
+- bytesToHexString
+- hexStringToBytes
+
+### EncryptUtil
+
+- encrypt
+- decrypt
+
+### RsaUtil
+
+- encrypt
+- decrypt
+
+### TimeUtil
+
+### MapperUtil
+
 ## Build artifacts
 > Intellij IDEA
 ```
@@ -54,8 +73,15 @@
 ./mvnw clean package
 ```
 
+### Maven deploy
+
+```bash
+./mvnw deploy
+```
+
 ## Todo
 
+- [x] [maven package in GitHub](https://github.com/zzh1991/Java-Util/packages/)
 - [ ] Java API Doc
 - [ ] Utils Mind Map
 
