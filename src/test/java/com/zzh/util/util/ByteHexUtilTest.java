@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * @author zhihao zhang
- * @date 2019-07-10
+ * @since 2019-07-10
  */
 
 class ByteHexUtilTest {

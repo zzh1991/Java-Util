@@ -4,7 +4,7 @@ import com.google.common.io.BaseEncoding;
 
 /**
  * @author zhihao zhang
- * @date 2019-07-10
+ * @since 2019-07-10
  */
 
 public final class ByteHexUtil {

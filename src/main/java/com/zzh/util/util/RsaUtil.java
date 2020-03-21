@@ -18,7 +18,7 @@ import static com.zzh.util.vo.RsaKeyPairGenerator.RSA;
 
 /**
  * @author zhihao zhang
- * @date 2019-07-16
+ * @since 2019-07-16
  */
 
 public final class RsaUtil {

@@ -6,7 +6,7 @@ import lombok.experimental.UtilityClass;
 
 /**
  * @author zhihao zhang
- * @date 2019-04-10
+ * @since 2019-04-10
  */
 
 @UtilityClass
@@ -14,10 +14,10 @@ public class MapperUtil {
 
     /**
      * may throw exception, should catch
-     * @param json
-     * @param clazz
-     * @param <T>
-     * @return
+     * @param json json text
+     * @param clazz class
+     * @param <T> generic class
+     * @return generic class
      */
     public static <T> T getObjectFromJson(String json, Class<T> clazz) {
         return JsonIterator.deserialize(replaceSingleQuote(json), clazz);
@@ -29,10 +29,10 @@ public class MapperUtil {
 
     /**
      * may throw exception, should catch
-     * @param json
-     * @param typeLiteral
-     * @param <T>
-     * @return
+     * @param json json text
+     * @param typeLiteral type
+     * @param <T> generic class
+     * @return generic class
      */
     public static <T> T getObjectFromJson(String json, TypeLiteral<T> typeLiteral) {
         return JsonIterator.deserialize(replaceSingleQuote(json), typeLiteral);
