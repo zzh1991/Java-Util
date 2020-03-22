@@ -2,7 +2,7 @@ package com.zzh.util.util;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import com.zzh.util.vo.RsaKeyPairGenerator;
+import com.zzh.util.RsaKeyPairGenerator;
 
 import java.util.Base64;
 
