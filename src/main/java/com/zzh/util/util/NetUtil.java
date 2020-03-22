@@ -1,11 +1,21 @@
 package com.zzh.util.util;
 
 import lombok.experimental.UtilityClass;
-import okhttp3.*;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+import okhttp3.ResponseBody;
 
 import java.io.IOException;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
+
+/**
+ * @author zhihao zhang
+ * @since 2020.03.22
+ */
 
 @UtilityClass
 public class NetUtil {

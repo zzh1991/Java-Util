@@ -8,6 +8,11 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
+/**
+ * @author zhihao zhang
+ * @since 2020.03.22
+ */
+
 public class ListUtil {
     public static <T> List<List<T>> splitListToSmallLists(List<T> bigList, int splitSize) {
         if (isListNullOrEmpty(bigList)) {
