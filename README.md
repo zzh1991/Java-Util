@@ -73,6 +73,12 @@
 ./mvnw clean package
 ```
 
+### Java Doc
+
+```bash
+./mvnw javadoc:javadoc
+```
+
 ### Maven deploy
 
 ```bash
@@ -82,7 +88,7 @@
 ## Todo
 
 - [x] [maven package in GitHub](https://github.com/zzh1991/Java-Util/packages/)
-- [ ] Java API Doc
+- [x] Java API Doc
 - [ ] Utils Mind Map
 
 ## Author

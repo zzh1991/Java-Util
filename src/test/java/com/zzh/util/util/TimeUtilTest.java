@@ -1,10 +1,10 @@
 package com.zzh.util.util;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.zzh.util.vo.TimeVo;
 import org.junit.jupiter.api.Test;
 
-import java.sql.Time;
 import java.time.LocalDateTime;
-import java.time.ZoneId;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -23,5 +23,14 @@ class TimeUtilTest {
     void getMillisecondsByLocalDateTime() {
         assertThat(TimeUtil.getMillisecondsByLocalDateTime(dateTime))
                 .isEqualTo(1554903000000L);
+    }
+
+    @Test
+    void testLocalDateAndTimeFormat() throws JsonProcessingException {
+        TimeVo timeVo = TimeVo.builder().build();
+        String timeVoString = TimeUtil.MAPPER.writeValueAsString(timeVo);
+        TimeVo timeVoObject = TimeUtil.MAPPER.readValue(timeVoString, TimeVo.class);
+
+        assertThat(timeVoObject).isEqualTo(timeVo);
     }
 }
