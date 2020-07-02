@@ -20,7 +20,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
         <lombok.version>1.18.12</lombok.version>
-        <guava.version>28.2-jre</guava.version>
+        <guava.version>29.0-jre</guava.version>
         <okhttp.verion>3.14.2</okhttp.verion>
         <commons-lang3.version>3.9</commons-lang3.version>
         <jsoniter.version>0.9.23</jsoniter.version>
