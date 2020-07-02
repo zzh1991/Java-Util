@@ -24,7 +24,7 @@
         <okhttp.verion>3.14.2</okhttp.verion>
         <commons-lang3.version>3.9</commons-lang3.version>
         <jsoniter.version>0.9.23</jsoniter.version>
-        <junit-jupiter-api.version>5.6.0</junit-jupiter-api.version>
+        <junit-jupiter-api.version>5.6.2</junit-jupiter-api.version>
         <junit-platform.version>1.6.0</junit-platform.version>
         <assertj-core.version>3.15.0</assertj-core.version>
         <maven-compiler.version>3.8.1</maven-compiler.version>
