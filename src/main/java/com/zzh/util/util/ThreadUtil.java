@@ -8,6 +8,11 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author zhihao zhang
+ * @since 2020.03.22
+ */
+
 public class ThreadUtil {
     private static ExecutorService executorService = null;
 

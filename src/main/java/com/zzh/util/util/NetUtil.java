@@ -1,11 +1,21 @@
 package com.zzh.util.util;
 
 import lombok.experimental.UtilityClass;
-import okhttp3.*;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+import okhttp3.ResponseBody;
 
 import java.io.IOException;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
+
+/**
+ * @author zhihao zhang
+ * @since 2020.03.22
+ */
 
 @UtilityClass
 public class NetUtil {
@@ -26,7 +36,7 @@ public class NetUtil {
     }
 
     public static String postRequest(String url, String json) throws IOException {
-        RequestBody body = RequestBody.create(JSON, json);
+        RequestBody body = RequestBody.create(json, JSON);
         Request request = new Request.Builder()
                 .url(url)
                 .post(body)
