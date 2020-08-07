@@ -2,9 +2,8 @@
 out
 target
 
-java-com.zzh.util.util.iml
+java-util.iml
 
 .DS_Store
 dependency-reduced-pom.xml
-
 javadoc.sh
