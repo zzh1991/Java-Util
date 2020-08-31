@@ -2,6 +2,7 @@
 
 <p align="center">
     <p align="center">
+        <img src="https://badges.toozhao.com/badges/01EH2FD8GAHEZ8V32MMS3TJ2GJ/green.svg" />
         <a href="https://github.com/zzh1991/Java-Util/blob/master/LICENSE"><img src="https://img.shields.io/github/license/zzh1991/Java-Util.svg"></a>
         <a href="#"><img src="https://img.shields.io/github/languages/top/zzh1991/Java-Util.svg"></a>
         <a href="#"><img src="https://img.shields.io/github/languages/count/zzh1991/Java-Util.svg"></a>
