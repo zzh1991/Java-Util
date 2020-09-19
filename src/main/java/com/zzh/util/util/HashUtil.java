@@ -1,9 +1,12 @@
 package com.zzh.util.util;
 
+import com.google.common.hash.Hashing;
 import io.seruco.encoding.base62.Base62;
 import lombok.NonNull;
 import lombok.experimental.UtilityClass;
 import org.apache.commons.codec.digest.MurmurHash3;
+
+import static com.google.common.base.Charsets.UTF_8;
 
 /**
  * @author zhihao zhang
@@ -50,5 +53,32 @@ public class HashUtil {
         String numText = String.valueOf(num);
         byte[] encode = BASE_62.encode(numText.getBytes());
         return new String(encode);
+    }
+
+    /**
+     * generate a hash based on the string text by guava
+     * @param text String
+     * @return hash
+     */
+    public int hash32byGuaua(@NonNull String text) {
+        return Hashing.murmur3_32().hashString(text, UTF_8).asInt();
+    }
+
+    /**
+     * generate sha hash based on the string
+     * @param text String
+     * @return sha hash string
+     */
+    public String sha(@NonNull String text) {
+        return Hashing.sha256().hashString(text, UTF_8).toString();
+    }
+
+    /**
+     * generate md5 hash based on the string
+     * @param text String
+     * @return md5 hash string
+     */
+    public String md5(@NonNull String text) {
+        return Hashing.md5().hashString(text, UTF_8).toString();
     }
 }

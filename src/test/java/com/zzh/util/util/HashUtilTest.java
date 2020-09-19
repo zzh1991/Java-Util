@@ -20,6 +20,8 @@ class HashUtilTest {
         int result = 267637069;
         int hash = HashUtil.hash32(text);
         assertThat(hash).isEqualTo(result);
+
+        assertThat(HashUtil.hash32byGuaua(text)).isEqualTo(result);
     }
 
     @Test
@@ -39,5 +41,13 @@ class HashUtilTest {
 
         int hash2 = Integer.MAX_VALUE;
         System.out.println(HashUtil.base62(hash2));
+    }
+
+    @Test
+    void md5() {
+        String text = "https://blog.zzhpro.com";
+        String md5 = HashUtil.md5(text);
+        String result = "5e68356127cd8f8e5ab0e7d8e890a948";
+        assertThat(md5).isEqualTo(result);
     }
 }
