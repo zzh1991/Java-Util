@@ -6,6 +6,12 @@ package com.zzh.util.constant;
  */
 
 public enum StatusEnum {
-    SUCCESS_STATUS,
-    FAILURE_STATUS,
+    SUCCESS_STATUS("success"),
+    FAILURE_STATUS("failure");
+
+    private final String status;
+
+    StatusEnum(String status) {
+        this.status = status;
+    }
 }

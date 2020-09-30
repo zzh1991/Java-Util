@@ -21,7 +21,7 @@ public class HashUtil {
      * @param num long
      * @return hash
      */
-    public int hash32(@NonNull long num) {
+    public int hash32(long num) {
         return MurmurHash3.hash32(num);
     }
 
@@ -49,7 +49,7 @@ public class HashUtil {
      * @param num int number
      * @return base62 text
      */
-    public String base62(@NonNull int num) {
+    public String base62(int num) {
         String numText = String.valueOf(num);
         byte[] encode = BASE_62.encode(numText.getBytes());
         return new String(encode);
