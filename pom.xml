@@ -36,6 +36,7 @@
         <jol.version>0.11</jol.version>
         <codec.version>1.15</codec.version>
         <base62.version>0.1.3</base62.version>
+        <cglib.version>3.3.0</cglib.version>
     </properties>
 
     <dependencies>
@@ -131,6 +132,12 @@
             <groupId>io.seruco.encoding</groupId>
             <artifactId>base62</artifactId>
             <version>${base62.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>${cglib.version}</version>
         </dependency>
 
     </dependencies>
