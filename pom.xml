@@ -21,7 +21,7 @@
         <java.version>11</java.version>
         <lombok.version>1.18.18</lombok.version>
         <guava.version>29.0-jre</guava.version>
-        <okhttp.verion>4.9.0</okhttp.verion>
+        <okhttp.verion>4.9.1</okhttp.verion>
         <commons-lang3.version>3.11</commons-lang3.version>
         <jsoniter.version>0.9.23</jsoniter.version>
         <junit-jupiter-api.version>5.7.0</junit-jupiter-api.version>
