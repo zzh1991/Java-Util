@@ -40,12 +40,32 @@
 - [x] Utils Mind Map
 
 ## Build artifacts
-> Intellij IDEA
+
+> Now using GitGub Action to deploy the newest package.
+
+Intellij IDEA
 ```
 1. Project Structure
 2. Project Settings -> Artifacts
 3. + -> Jar -> From modules with dependencies
-4. Build -> Build Artifacts
+4. Build -> Build Artifa
+cts
+```
+
+## How to use
+
+```
+<repositories>
+    <id>github</id>
+    <name>GitHub zzh1991 Apache Maven Packages</name>
+    <url>https://maven.pkg.github.com/zzh1991/java-util</url>
+</repositories>
+
+<dependency>
+  <groupId>com.zzh.util</groupId>
+  <artifactId>java-util</artifactId>
+  <version>1.0-SNAPSHOT</version>
+</dependency>
 ```
 
 ## Author
@@ -60,5 +80,5 @@ Please ⭐️ this repository if this project helped you!
 
 ## 📝 License
 
-Copyright © 2019-2020 [zzh1991](https://github.com/zzh1991).<br />
+Copyright © 2019-2021 [zzh1991](https://github.com/zzh1991).<br />
 This project is [MIT](https://github.com/zzh1991/Java-Util/blob/master/LICENSE) licensed.
