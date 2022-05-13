@@ -32,7 +32,7 @@
         <maven-lombok.version>1.18.20.0</maven-lombok.version>
         <maven-javadoc.version>3.3.2</maven-javadoc.version>
         <jackson.version>2.13.2</jackson.version>
-        <javasist.version>3.28.0-GA</javasist.version>
+        <javasist.version>3.29.0-GA</javasist.version>
         <jol.version>0.11</jol.version>
         <codec.version>1.15</codec.version>
         <base62.version>0.1.3</base62.version>
