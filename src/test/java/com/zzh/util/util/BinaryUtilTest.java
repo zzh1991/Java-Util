@@ -2,14 +2,14 @@ package com.zzh.util.util;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class BinaryUtilTest {
 
     @Test
     void getProperSize() {
-        System.out.println(BinaryUtil.getProperSize(15));
-        System.out.println(BinaryUtil.getProperSize(16));
-        System.out.println(BinaryUtil.getProperSize(17));
+        assertThat(BinaryUtil.getProperSize(15)).isEqualTo(16);
+        assertThat(BinaryUtil.getProperSize(16)).isEqualTo(16);
+        assertThat(BinaryUtil.getProperSize(17)).isEqualTo(32);
     }
 }

@@ -61,7 +61,7 @@ public class HashUtil {
      * @return hash
      */
     public int hash32byGuaua(@NonNull String text) {
-        return Hashing.murmur3_32().hashString(text, UTF_8).asInt();
+        return Hashing.murmur3_32_fixed().hashString(text, UTF_8).asInt();
     }
 
     /**

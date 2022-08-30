@@ -48,9 +48,7 @@ class TimeUtilTest {
         String timeVoString = JsonStream.serialize(timeVo);
 
         String finalTimeVoString = timeVoString;
-        Exception exception = assertThrows(JsonException.class, () -> {
-            JsonIterator.deserialize(finalTimeVoString, TimeVo.class);
-        });
+        Exception exception = assertThrows(JsonException.class, () -> JsonIterator.deserialize(finalTimeVoString, TimeVo.class));
 
         assertThat(exception).isNotNull();
 

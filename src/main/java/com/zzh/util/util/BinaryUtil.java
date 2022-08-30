@@ -7,6 +7,6 @@ package com.zzh.util.util;
 
 public class BinaryUtil {
     public static int getProperSize(int size) {
-        return  -1 >>> Integer.numberOfLeadingZeros(size - 1);
+        return  (-1 >>> Integer.numberOfLeadingZeros(size - 1)) + 1;
     }
 }
