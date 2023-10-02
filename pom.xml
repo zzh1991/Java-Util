@@ -18,13 +18,13 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>17</java.version>
-        <lombok.version>1.18.28</lombok.version>
+        <java.version>21</java.version>
+        <lombok.version>1.18.30</lombok.version>
         <guava.version>31.1-jre</guava.version>
         <okhttp.verion>4.11.0</okhttp.verion>
         <commons-lang3.version>3.13.0</commons-lang3.version>
         <jsoniter.version>0.9.23</jsoniter.version>
-        <junit-jupiter-api.version>5.9.3</junit-jupiter-api.version>
+        <junit-jupiter-api.version>5.10.0</junit-jupiter-api.version>
         <junit-platform.version>1.10.0</junit-platform.version>
         <assertj-core.version>3.24.2</assertj-core.version>
         <maven-compiler.version>3.11.0</maven-compiler.version>
@@ -151,6 +151,14 @@
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
+                    <enablePreview>true</enablePreview>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>${lombok.version}</version>
+                        </path>
+                    </annotationProcessorPaths>
                 </configuration>
             </plugin>
             <plugin>
@@ -166,26 +174,26 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok-maven-plugin</artifactId>
-                <version>${maven-lombok.version}</version>
-                <executions>
-                    <execution>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>delombok</goal>
-                        </goals>
-                        <configuration>
-                            <addOutputDirectory>false</addOutputDirectory>
-                            <sourceDirectory>src/main/java</sourceDirectory>
-                            <outputDirectory>
-                                ${project.build.directory}/delombok
-                            </outputDirectory>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.projectlombok</groupId>-->
+<!--                <artifactId>lombok-maven-plugin</artifactId>-->
+<!--                <version>${maven-lombok.version}</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <phase>generate-sources</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>delombok</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <addOutputDirectory>false</addOutputDirectory>-->
+<!--                            <sourceDirectory>src/main/java</sourceDirectory>-->
+<!--                            <outputDirectory>-->
+<!--                                ${project.build.directory}/delombok-->
+<!--                            </outputDirectory>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>

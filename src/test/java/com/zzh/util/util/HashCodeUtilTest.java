@@ -23,7 +23,7 @@ class HashCodeUtilTest {
         System.out.println(object.hashCode());
         System.out.println(ClassLayout.parseInstance(object).toPrintable());
 
-        System.out.println(Thread.currentThread().getId());
+        System.out.println(Thread.currentThread().threadId());
 
 //        Object object2 = new Object();
 //        System.out.println(object);
